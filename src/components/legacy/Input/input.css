@@ -1,0 +1,14 @@
+.legacy-input {
+    font-family: Inter;
+    height: 35px;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 320px) {
+    .legacy-input {
+        width: 240px;
+    }
+}

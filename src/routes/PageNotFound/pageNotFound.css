@@ -1,0 +1,44 @@
+.page-not-found-div {
+    padding: 20px;
+    margin: auto;
+    max-width: 400px;
+}
+
+.page-not-found-div span {
+    font-size: 10em;
+    display: inline-block;
+}
+
+.page-not-found-header-div {
+    margin: auto;
+    max-width: 400px;
+}
+
+.page-not-found-img {
+    scale: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: rotation 4s linear;
+    animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 600px) {
+    @keyframes rotation {
+        from {
+            transform: translateX(-100px) rotate(0deg) translateY(0px);
+        }
+        to {
+            transform: translateX(1000px) rotate(360deg) translateY(0px);
+        }
+    }
+}
+@media only screen and (min-width: 600px) {
+    @keyframes rotation {
+        from {
+            transform: translateX(600px) rotate(0deg) translateY(0px);
+        }
+        to {
+            transform: translateX(2000px) rotate(600deg) translateY(0px);
+        }
+    }
+}

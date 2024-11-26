@@ -1,0 +1,78 @@
+.content-div {
+    min-width: 320px;
+}
+
+.back-to-wheel-icon {
+    width: 27px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.reflection-progress-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.reflection-progress-icon {
+    width:60%;
+}
+
+.reflection-progress-icon-div {
+    width: 25%;
+    padding-bottom: 15px;
+}
+
+.reflection-progress-icon-div a{
+    text-decoration: unset;
+    color: black;
+}
+
+.reflection-progress-icon-div p {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.p-mark-0, .p-mark-1, .p-mark-2, .p-mark-3, .p-mark-4, .p-mark-5 {
+    color: red;
+}
+
+.p-mark-6, .p-mark-7, .p-mark-8, .p-mark-9, .p-mark-10 {
+    color: red;
+}
+.p-mark-10, .p-mark-11, .p-mark-12, .p-mark-13, .p-mark-14 {
+    color: #dbb700;
+}
+
+.p-mark-15, .p-mark-16, .p-mark-17, .p-mark-18, .p-mark-19, .p-mark-20 {
+    color: green;
+}
+
+.save-for-now-p a{
+    font-size: 20px;
+}
+
+.save-for-now-p a:hover {
+    cursor:pointer;
+}
+
+.back-to-wheel, .back-to-wheel-icon {
+    cursor:pointer;
+    color: black;
+}
+
+.back-to-wheel:hover {
+    color: #004b82
+}
+
+.reflection-progress-icons {
+   max-width: 600px;
+}
+
+.reflections-div {
+    max-width: 600px;
+    margin: auto;
+}

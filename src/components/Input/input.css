@@ -1,0 +1,11 @@
+.input {
+    font-family: 'Overpass';
+    height: 35px;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #F2F3F7;
+}

@@ -1,0 +1,10 @@
+.send-request .button {
+    margin-top: 10px;
+}
+
+.email p, .request p {
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: red
+}

@@ -1,0 +1,32 @@
+.next-button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 80px;
+    background: linear-gradient(90deg, #9D62F5 0%, #6049CD 100%);
+    padding: 10px 0 7px 0;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.next-button-disabled {
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 80px;
+    background: linear-gradient(105deg, #9D62F5 8.21%, #6049CD 91.79%);
+    opacity: 0.1;
+    padding: 10px 0 7px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}

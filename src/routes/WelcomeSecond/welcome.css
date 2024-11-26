@@ -1,0 +1,38 @@
+.welcome-img {
+    margin-top: 40px;
+    width: 60%;
+    height: auto;
+    max-width: 200px;
+}
+
+.welcome-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+    color: #ffffff;
+    background: linear-gradient(162.65deg, #9D62F5 0.42%, #6049CD 97.7%);
+}
+
+.welcome-content-wrapper {
+    margin-top: -10%;
+}
+
+.welcome-div p {
+    font-family: 'Overpass', sans-serif;
+}
+
+.underline-img {
+    width: 35%;
+    min-width: 200px;
+}
+
+.welcome-div a {
+    padding-bottom: 20px;
+}
+
+.welcome-div h1 {
+    margin-top: 0px;
+}

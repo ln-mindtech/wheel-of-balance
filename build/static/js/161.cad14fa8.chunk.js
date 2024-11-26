@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmindtech_frontend=self.webpackChunkmindtech_frontend||[]).push([[161],{6161:(e,n,t)=>{t.d(n,{Z:()=>a});t(2791);const a=t.p+"static/media/winhuman.bac811efb5e5d986504e35da6851af00.svg"}}]);
+//# sourceMappingURL=161.cad14fa8.chunk.js.map

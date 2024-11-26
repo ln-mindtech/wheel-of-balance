@@ -1,0 +1,44 @@
+.balance-wheel-save-div {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.graph {
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.balance-wheel-save-div p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.reevaluate-balance-wheel {
+    margin-top: 10px;
+}
+
+.balance-wheel-save-div {
+    padding-bottom: 10px;
+}
+
+.balance-wheel-save-div .life-sphere-icon-div .default {
+    height: 50px;
+    width: 30px;
+    margin-top: 0;
+}
+
+.balance-wheel-save-div button {
+    margin-top: 15px;
+}
+
+.balance-wheel-save-div input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}

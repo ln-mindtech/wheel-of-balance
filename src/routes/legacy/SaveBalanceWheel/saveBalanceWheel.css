@@ -1,0 +1,38 @@
+.legacy-balance-wheel-save-div {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.legacy-graph {
+    justify-content: space-around;
+    align-items: center;
+    /*width: 360px;*/
+    margin: 0 auto;
+}
+
+.legacy-balance-wheel-save-div p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.legacy-reevaluate-balance-wheel {
+    margin-top: 10px;
+}
+
+.legacy-balance-wheel-save-div {
+    padding-bottom: 10px;
+}
+
+.legacy-balance-wheel-save-div button {
+    margin-top: 15px;
+}
+
+.legacy-balance-wheel-save-div input {
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.legacy-checkbox {
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,41 @@
+.legacy-welcome-img {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+.legacy-welcome-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+}
+
+.legacy-underline-img {
+    width: 35%;
+    min-width: 200px;
+}
+
+.legacy-welcome-div a {
+    padding-bottom: 20px;
+}
+
+.legacy-welcome-div h1 {
+    margin-top: 0;
+}
+
+.legacy-welcome-div .legacy-button {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .legacy-welcome-img {
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+    }
+}

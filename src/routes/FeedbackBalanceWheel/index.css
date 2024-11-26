@@ -1,0 +1,49 @@
+.feedback-balance-wheel h2{
+    margin-top: 20px;
+}
+
+.feedback-balance-wheel {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.feedback-question p {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.feedback-answer {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.feedback-questions .button {
+    margin-top: 20px
+}
+
+.feedback-buttons {
+    display: inline;
+}
+
+.feedback-button-skip {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback-button-skip a {
+    cursor:pointer;
+    color: black;
+    text-decoration: underline;
+}
+
+.feedback-button-skip a:hover {
+    color: black;
+}

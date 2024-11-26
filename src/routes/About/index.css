@@ -1,0 +1,37 @@
+
+.about-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+.about-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.about-content table, .about-content th, .about-content td {
+    border: 1px solid;
+}
+
+.about-content .guaranteed-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.about-content li {
+    text-align: justify;
+}
+
+.about-content ol {
+    padding-left: 20px;
+}
+
+.about-content .sing-up {
+    color: black;
+    text-decoration: inherit;
+}
+
+.about-content textarea {
+    width: 320px;
+}

@@ -1,0 +1,144 @@
+.legacy-balance-wheel-question {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.legacy-rates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.legacy-rate, .legacy-rated {
+    cursor: pointer;
+    /*margin: 20px 10px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    border: 1px solid black;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 10px 5px;*/
+    font-size: 24px;
+    font-family: Inter;
+    /*font-size: 26px;*/
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    width: 40px;
+    height: 40px;
+    margin: 3px 3px;
+}
+
+.legacy-rate:hover {
+    background-color: #323232;
+    color: white;
+}
+
+.legacy-rated {
+    background-color: #323232;
+    color: white;
+}
+
+.legacy-graph {
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    /*width: 360px;*/
+    margin: 0 auto;
+}
+
+.legacy-dot {
+    height: 6px;
+    width: 6px;
+    background-color: #323232;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.legacy-dot-selected {
+    height: 10px;
+    width: 10px;
+    background-color: #323232;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.legacy-dot-empty {
+    height: 6px;
+    width: 6px;
+    background-color: rgba(50, 50, 50, 0.53);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.legacy-dots-div {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.legacy-dot-div {
+    display: inline-flex;
+}
+
+.legacy-left-div {
+    display: inline-flex;
+}
+
+.legacy-right-div {
+    display: inline-flex;
+}
+
+.legacy-left-div img{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.legacy-right-div img{
+    width: 25px;
+    margin-left: 5px;
+}
+
+.legacy-left-disabled {
+    opacity: 0.5;
+}
+
+.legacy-right-disabled {
+    opacity: 0.5;
+}
+
+.legacy-left, .legacy-right {
+    cursor:pointer;
+}
+
+.legacy-balance-wheel-skip-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.legacy-balance-wheel-skip-button a {
+    cursor:pointer;
+    color: black;
+    text-decoration: underline;
+}
+
+.legacy-balance-wheel-skip-button a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 380px) {
+    #balance-wheel {
+        width: 250px;
+        height: auto;
+    }
+
+}
