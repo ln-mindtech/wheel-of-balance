@@ -1,0 +1,84 @@
+@media screen and (min-width: 980px) {
+    .be-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .be-content .be-block {
+            width: 32%;
+            align-content: baseline;
+        }
+
+        .be-content .title-violet {
+            width: 100%;
+        }
+
+    .po-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .po-block {
+        width: 24%;
+    }
+
+    .po-content .title-violet {
+        width: 100%;
+    }
+
+    .progress-change {
+        margin-top: 58px;
+        background: none;
+        overflow: hidden;
+    }
+
+        .progress-change .pc-content {
+            position: relative;
+            background: none;
+            padding-bottom: 130px;
+            padding-top: 50px;
+        }
+
+        .progress-change .pc-violet-bg::before, .progress-change .pc-violet-bg::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            background: rgb(96,73,205);
+            background: linear-gradient(90deg, rgba(96,73,205,1) 0%, rgba(135,89,230,1) 26%, rgba(157,98,245,1) 51%, rgba(157,98,245,0.6978992280505952) 67%, rgba(157,98,245,0.19929978827468486) 80%, rgba(157,98,245,0) 100%);
+        }
+
+        .progress-change .pc-violet-bg::after {
+            background: url('../img/jumper.jpg') no-repeat;
+            background-size: auto 120%;
+            background-position: top right;
+            opacity: 1;
+            z-index: 0;
+            right: -10%;
+        }
+
+    .pc-content .content > div {
+        position: relative;
+        z-index: 2;
+        text-align: left;
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .progress-change .pc-violet-bg::after {
+        background-size: auto 130%;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .progress-change .pc-violet-bg::after {
+        background-size: auto 140%;
+    }
+}

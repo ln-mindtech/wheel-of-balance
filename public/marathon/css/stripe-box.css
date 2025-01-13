@@ -1,0 +1,132 @@
+/*stripe plan box end*/
+p.agree {
+    color: #5F616E;
+    font-size: 12px;
+    font-size: calc(var(--figmaScaler) * 18px);
+    font-weight: 300;
+}
+
+p.agree b {
+    font-weight: 600;
+}
+
+p.agree a {
+    text-decoration: underline;
+}
+
+p.agree a:hover {
+    color: #8257E3;
+}
+
+
+/*new stripe block modifiers*/
+
+.stripeBox p.txt-sm {
+    font-weight: 400;
+}
+.stripeBox .plan-block {margin:0 auto 30px; }
+
+.stripeBox .plan-block>.right {
+    padding: 18px 18px 12px;    
+}
+
+.stripeBox .plan-block>.right p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.stripeBox .plan-block>.right p.first {
+    font-weight: 900;
+    font-size: 26px;
+    font-size: calc(var(--figmaScaler) * 39px);
+}
+
+.stripeBox .plan-block>.left p.first,
+.stripeBox .plan-block>.left p.oldPrice {
+    font-size: 17px;
+    font-size: calc(var(--figmaScaler) * 26px);
+    margin-bottom: 5px;
+    margin-bottom: calc(var(--figmaScaler) * 8px);
+    line-height: initial !important;
+}
+
+.stripeBox .plan-block>.left p.oldPrice {
+    margin-bottom: 8px;
+    margin-bottom: calc(var(--figmaScaler) * 10px);
+}
+
+.stripeBox .plan-block>.left #price { font-weight: 900;}
+
+.stripeBox .plan-block>.left p.oldPrice span, .stripeBox .plan-block>.right p.last {
+    font-weight: 200;
+}
+
+.stripeBox .plan-block {
+    border-radius: 10px;
+}
+
+.stripeBox .plan-block h6 {
+    font-family: 'Overpass', sans-serif;
+}
+
+.divider {
+    margin: 40px auto;
+    width: 80%;
+    height: 1px;
+    background: white;
+}
+
+.stripeBox p.agree {font-weight: 200; line-height: initial; text-align: center;
+margin: 20px 0 0;}
+
+.stripeBox p.agree, .stripeBox p.agree b,.stripeBox p.agree, .stripeBox p.agree a {
+    color:white;
+}
+
+
+/*media*/
+
+@media (min-width: 980px) {
+    .stripeBox p.txt-sm  {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .divider {display: none;}
+
+    .stripeBox p.agree {position: relative; z-index: 10;}
+
+    .stripeBox .be-button-on.button-on.be-bn-center {text-align: center;}
+}
+
+
+@media (max-width: 380px) {
+    :root {
+        --figmaScaler: 0.64;
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --figmaScaler: 0.60;
+    }
+}
+
+@media (max-width: 350px) {
+    :root {
+        --figmaScaler: 0.55;
+    }
+
+}
+
+@media (max-width: 340px) {
+    :root {
+        --figmaScaler: 0.52;
+    }
+}
+
+
+@media (max-width: 320px) {
+    :root {
+        --figmaScaler: 0.48;
+    }
+}

@@ -1,0 +1,408 @@
+:root {
+    --figmaScaler: 0.66;
+}
+
+/*reset css*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+body {
+    line-height: initial;
+    color: black;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+/*main styles*/
+p,
+.be-desc p,
+.feat-list li,
+.pre-regars,
+.positive-mind .diagram ul li, ol li {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    font-size: calc(var(--figmaScaler) * 23px);
+    line-height: initial;
+    /*    margin-bottom: 18px;*/
+    color: #8257E3;
+}
+
+h2 {
+    color: #8257E3;
+    font-size: 41px;
+    font-size: calc(var(--figmaScaler) * 62px);
+    line-height: initial;
+    letter-spacing: initial;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin-bottom: 35px;
+    margin-bottom: calc(var(--figmaScaler) * 54px);
+    margin-top: 21px;
+}
+
+h2.long {
+    font-size: 36px;
+    font-size: calc(var(--figmaScaler) * 48px);
+}
+
+bold {
+    font-weight: 700;
+}
+
+
+mail {
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*helper styles*/
+
+.almostThere {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.almostThere-content {
+    width: 308px;
+    margin: auto;
+}
+
+.subs-content {
+    width: 88%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.subs {
+    text-align: left;
+    padding-top: 118px;
+    padding-top: calc(var(--figmaScaler) * 179px);
+    padding-bottom: 118px;
+    padding-bottom: calc(var(--figmaScaler) * 179px);
+}
+
+.rel {
+    position: relative;  
+}
+
+.title-violet-block h2:not(.long) {
+    text-align: center;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.title-violet-block img {
+    width: 75px;
+    width: calc(var(--figmaScaler) * 113px);
+    position: absolute;
+    top: -25px; 
+    right: -72px;
+    right: calc(var(--figmaScaler) * (-110px));
+}
+
+.text-block {
+    margin-top: 19px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.text-block-1 p {
+    display: block;
+
+}
+
+.text-block-1 {
+    margin-bottom: 16px;
+}
+
+.button-messeger {
+    padding: 14px 22px;
+    display: inline-block;
+    background-color: #0384FF;
+    border-radius: 7px;
+    
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 5px 5px 10px;
+}
+
+.button-messeger > div {display: flex;  justify-content: space-between;
+    align-items: center;}
+
+    .button-messeger.button-green {
+        padding: 14px 26px;
+    }
+
+.button-messeger strong {
+    font-family: 'Inter';   
+    font-size: 23px;
+    font-size: calc(var(--figmaScaler) * 35px);  
+    color: white;
+    margin-left: 8px;
+}
+
+.button-messeger img {
+    height: 25px;
+    width: 25px;
+}
+
+.button-green {
+    background-color: #27D045;
+}
+
+.thanks-content {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.buttons {
+   text-align: center;
+   margin-top: 48px;
+    margin-top: calc(var(--figmaScaler) * 72px);
+}
+
+.header-violet-block {
+    margin-bottom: 52px;
+    margin-bottom: calc(var(--figmaScaler) * 80px);
+}
+
+.header-violet-block h2 {
+    font-size: 41px;
+    font-size: calc(var(--figmaScaler) * 62px);
+    margin-top: 0px;
+}
+
+.desc-text-3 p {
+    font-size: 33px;
+    font-size: calc(var(--figmaScaler) * 33px);
+    line-height: initial;
+}
+
+.pMargT {
+    margin-top: 32px;
+    margin-top: calc(var(--figmaScaler) * 48px);
+}
+
+.text-block-alert {
+    margin-top: 40px;
+    margin-top: calc(var(--figmaScaler) * 62px);
+    
+}
+
+.text-block-alert p {
+    font-size: 15px;
+    font-size: calc(var(--figmaScaler) * 23px);
+}
+
+.text-block-alert p bold {
+    position: relative;
+}
+
+.alImg {
+    position: absolute;
+    left: -12px;
+    left: calc(var(--figmaScaler) * (-18px));
+    height: 15px;
+    height: calc(var(--figmaScaler) * 23px);
+    top: 0;
+}
+
+.desc-text p, ol li {    
+    margin-bottom: 21px;
+    margin-bottom: calc(var(--figmaScaler) * 32px);
+}
+
+.mailLink {
+    color: #8257E3;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1080px) {
+
+    p,
+    .be-desc p,
+    .feat-list li,
+    .pre-regars,
+    .positive-mind .diagram ul li {
+        font-size: 23px;
+        font-size: calc(var(--figmaScaler) * 23px);
+        line-height: initial;
+        color: #8257E3;
+    }
+
+    h2 {
+        font-size: 62px;
+        font-size: calc(var(--figmaScaler) * 62px);
+        line-height: initial;
+        margin-bottom: 40px;
+        margin-top: 43px;
+    }
+
+    .almostThere-content {
+        width: 940px;
+    }
+
+    .text-block-1 p {
+        display: inline;
+    }
+
+    .button-messeger {      
+        border-radius: 12px;
+    } 
+
+    .button-messeger img {
+        height: 35px;
+        width: 35px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .buttons {display: initial;}
+}
+
+
+@media (max-width: 380px) {
+    :root {
+        --figmaScaler: 0.64;
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --figmaScaler: 0.60;
+    }
+}
+
+@media (max-width: 350px) {
+    :root {
+        --figmaScaler: 0.55;
+    }
+
+}
+
+@media (max-width: 340px) {
+    :root {
+        --figmaScaler: 0.52;
+    }
+}
+
+
+@media (max-width: 320px) {
+    :root {
+        --figmaScaler: 0.48;
+    }
+}

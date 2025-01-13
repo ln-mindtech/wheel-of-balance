@@ -1,0 +1,162 @@
+ol {
+    padding-left: 20px;
+}
+
+div:not(.drop-toggle)>ol>li::marker {
+    font-weight: bold;
+}
+
+div.drop-toggle>ol {
+    margin-bottom: 18px;
+}
+
+ol li,
+p,
+.desc-text p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.thanks {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+p.txt-grey {
+    color: #5F616E;
+    font-size: 14px;
+    font-size: calc(var(--figmaScaler) * 21px);
+}
+
+p.txt-grey i {
+    font-weight: 300;
+    color: #A1A3AF;
+    font-style: italic;
+}
+
+p.sub-ttl {
+    margin-top: -20px;
+    margin-bottom: 52px;
+    margin-bottom: calc(var(--figmaScaler) * 80px);
+    text-align: center;
+}
+
+b {
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.inputDiv {
+    position: relative;
+    margin-top: 60px;
+    margin-top: calc(var(--figmaScaler) * 80px);
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #767676;
+    width: 100%;
+    background: white;
+    padding: 14px 20px 14px 20px;
+}
+
+.inputDiv span {
+    color: #E35757;
+}
+
+input[type="text"].fb-input::placeholder,
+.inputDiv {
+    text-align: left;
+    font-size: 16.5px;
+    font-size: calc(var(--figmaScaler) * 25px);
+    font-family: 'Inter';
+    font-weight: 300;
+}
+
+input[type="text"].fb-input::placeholder {
+    color: transparent;
+}
+
+input[type="text"].fb-input {
+    position: absolute;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    background: none;
+    font-size: 16.5px;
+    font-size: calc(var(--figmaScaler) * 25px);
+    top: 0;
+    left: 0;
+}
+
+input[type="text"].fb-input:focus,
+input[type="text"].fb-input:not(:placeholder-shown) {
+    background: white;
+}
+
+input[type="text"].notvalid {
+    border: 2px solid #E35757;
+}
+
+.dropdown {
+    margin-top: 30px;
+    margin-top: calc(var(--figmaScaler) * 40px);
+    margin-bottom: 30px;
+    margin-bottom: calc(var(--figmaScaler) * 40px);
+}
+
+.dropdown>p {
+    color: black;
+    margin-bottom: 18px;
+}
+
+.drop-toggle {
+    padding-left: 18px;
+}
+
+input[type="button"].mepr-submit {
+    font-weight: 900;
+    margin-bottom: 52px;
+    margin-bottom: calc(var(--figmaScaler) * 80px);
+}
+
+p.txt-center {
+    text-align: center;
+}
+
+p.txt-center a {
+    color: #8257E3;
+}
+
+p.drop-click:hover {
+    cursor: pointer;
+    color: #E35757;
+}
+
+#drop-toggle {
+    max-height: 0;
+    opacity: 0;
+    transition-duration: 500ms;
+    position: relative;
+    z-index: -1;
+    padding-left: 18px;
+}
+
+#drop-toggle.showHide {
+    max-height: 1000px;
+    opacity: 1;
+    z-index: initial;
+}
+
+#hiddenValidTxt {
+    position: absolute;
+    top: -20px; right: 0;color: #E35757;
+    font-size: 14px;
+    font-size: calc(var(--figmaScaler) * 21px);
+}
+
+#hiddenValidTxt.hidden {display: none;}
+
+.dropdown ol+p {margin-top: 18px;}

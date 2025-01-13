@@ -8,14 +8,14 @@ const AppReactGa = {
         ReactGA.event({
             category: 'User',
             action: 'page_view',
-            label: 'https://mindtech.health/balance/wheel/' + sphereName,
+            label: 'https://wheelofbalance.mindtech.health/frontend/balance/wheel/' + sphereName,
         });
     },
     balanceWheelNewSphere: (sphereName) => {
         ReactGA.event({
             category: 'User',
             action: 'page_view',
-            label: 'https://mindtech.health/balance/wheel/new/' + sphereName
+            label: 'https://wheelofbalance.mindtech.health/frontend/balance/wheel/new/' + sphereName
         });
     },
 }

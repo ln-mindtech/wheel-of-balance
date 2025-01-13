@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 153.39 153.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="76.69" x2="153.39" y2="76.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9d62f5"/>
+      <stop offset="1" stop-color="#6049cd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="37.95" y1="76.7" x2="115.44" y2="76.7" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="m76.69,0C34.4,0,0,34.4,0,76.69s34.4,76.7,76.69,76.7,76.69-34.4,76.69-76.7S118.98,0,76.69,0Zm0,145.47c-37.92,0-68.77-30.86-68.77-68.78S38.77,7.92,76.69,7.92s68.77,30.85,68.77,68.77-30.85,68.78-68.77,68.78Z"/>
+      <path class="cls-1" d="m101.96,38.89l-42.67,20.4-20.4,42.67c-1.74,3.65-1.02,7.85,1.84,10.71,1.82,1.83,4.19,2.77,6.61,2.77,1.38,0,2.77-.31,4.09-.95l42.67-20.4,20.4-42.66c1.74-3.65,1.02-7.85-1.83-10.71-2.86-2.86-7.05-3.57-10.71-1.84h0Zm-53.95,68.46c-.81.39-1.4-.01-1.68-.29-.28-.28-.68-.87-.29-1.68l17.38-36.36,20.94,20.94-36.35,17.39Zm59.34-59.34l-17.38,36.35-20.94-20.94,36.34-17.38c.83-.42,1.41.02,1.69.29.28.28.68.87.29,1.68h0Z"/>
+    </g>
+  </g>
+</svg>

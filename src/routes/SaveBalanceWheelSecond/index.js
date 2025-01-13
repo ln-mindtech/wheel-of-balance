@@ -102,7 +102,7 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
         }
 
         mixpanel.track('Email me press', analytics);
-console.log("balanceWheelSaveData",balanceWheelSaveData);
+
         APIService.saveBalanceWheelQuestions(balanceWheelSaveData)
             .then(response => {
                 if (response.data.hash) {
@@ -113,7 +113,7 @@ console.log("balanceWheelSaveData",balanceWheelSaveData);
                     // sessionStorage.removeItem('id_participant');
                     sessionStorage.removeItem('exported');
                 }
-                console.log("response.data",response.data);
+
                 if (response.data.icsData) {
                     const anchor = document.createElement("a");
                     anchor.href = response.data.icsData;
@@ -133,7 +133,6 @@ console.log("balanceWheelSaveData",balanceWheelSaveData);
                 url.searchParams.set('name', data.name);
                 url.searchParams.set('Email', data.email);
                 url.searchParams.set('Version', response.data.version);
-                console.log("url",url);
                 window.location.href = url;
             })
             .catch(error => {

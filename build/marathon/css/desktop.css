@@ -1,0 +1,649 @@
+@media screen and (min-width: 350px) {
+    .button-on a, .button-on input[type=button] {
+        font-size: 28px;
+        line-height: 32px;
+        padding: 16px 28px 10px 28px;
+    }
+
+    .result-after-img {
+        min-width: 340px;
+        height: 220px;
+    }   
+
+    #balance-wheel {
+        width: 310px;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .mindtech-join .violet-bg {
+        background-size: 100% auto;
+    }
+
+    .result-after-img {
+        min-width: 397px;
+    }
+
+    #balance-wheel {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header h1 {
+        padding: 50px 0 45px;
+    } 
+
+    .gd-footer-img {
+        height: 220px;
+        width: 100%;
+        position: relative;
+    }
+
+        .gd-footer-img img {
+            position: absolute;
+            top: initial;
+            left: 0;
+            bottom: 0;
+            margin-bottom: 0;
+        }
+}
+
+@media screen and (min-width: 710px) {
+    header h1 {
+        max-width: 500px;
+    }  
+
+    .content {
+        width: 100%;
+        max-width: 980px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .scores .bl-left {
+        margin-right: 20px;
+    }
+
+    .bl-right p, .bl-right h3 {
+        margin-left: 30px;
+    }
+
+    .scores h3 {
+        font-size: 18px;
+        line-height: 17px;
+        padding: 15px 25px 12px;
+    }
+
+    #balance-wheel {
+        width: 400px;
+    }
+
+    .canvas-block {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .commit .violet-bg {
+        background-size: 100% auto !important;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .feat-list li::after, .positive-mind .diagram ul li::after {      
+        top: 11px;
+        left: -18px;      
+    }
+
+    header h1 {
+        max-width: 100%;
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .dg-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .canvas-block {
+        width: min-content;
+        margin-right: 52px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    #balance-wheel {
+        width: 500px;
+    }
+
+
+    .dg-desc {
+        margin-top: 40px;
+        width: 50%;
+    }
+
+    p, .be-desc p, .feat-list li, .pre-regars, .positive-mind .diagram ul li {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    p, .be-desc p, .feat-list li, .dg-handsup-icon {
+        margin-bottom: 25px;
+    }
+
+        .dg-handsup-icon img {
+            width: 90px;
+        }
+
+    h2 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .scores .bl-left p {
+        width: 58px;        
+        font-size: 24px;
+    }
+
+    .scores .bl-left {
+        margin-right: 22px;
+    }
+
+    .bl-right p, .bl-right h3 {
+        margin-left: 40px;
+    }
+
+    .hi.scores h3 {
+        margin-top: 41px;
+    }
+
+    .scores h3 {
+        font-size: 22px;
+        line-height: 27px;
+        padding: 18px 25px 12px;
+        border-radius: 40px;
+        margin-bottom: 14px;
+    }
+
+    .low.scores .bl-right {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .scores .bl-left p {
+        border-bottom: 2px solid #e6e6e6;
+    }
+
+    .scores .bl-right {
+        border-left: 4px solid #82bc3f;
+    }
+
+    .hi.scores .bl-right::before, .hi.scores .bl-right::after, .med.scores .bl-right::before, .med.scores .bl-right::after, .low.scores .bl-right::before, .low.scores .bl-right::after {
+        height: 4px;
+    }
+
+    .result-block {
+        padding-bottom: 80px;
+    }
+
+    .result-after-img {
+        display: none;
+    }
+
+    .cr-content {
+        position: relative;
+    }
+
+        .cr-content::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 55%;
+            background: url('../img/world.jpg') no-repeat;
+            background-size: 100% auto;
+            background-position: left center;
+            opacity: 0.75;
+        }
+
+    .career {
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+
+        .career .content {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+            .career .content > div {
+                width: 50%;
+            }
+
+            .career .content .cr-icon-violet {
+                width: 110px;
+                float: left;
+                margin-right: 20px;
+            }
+
+        .career h2 {
+            margin-top: 0;
+            padding-top: 80px;
+        }
+
+    .cr-desc.desc-text {
+        padding-top: 3px;
+    }
+
+        .cr-desc.desc-text p:last-child {
+            margin-bottom: 0;
+            padding-bottom: 80px;
+            clear: both;
+            font-size: 36px;
+            line-height: 48px;
+            margin-top: 40px;
+        }
+
+    .mindtech-join .violet-bg {
+        background: url('../img/vio-rocks-desktop.jpg') no-repeat;
+        background-size: auto 100%;
+        background-position: center center;
+    }
+
+    .mindtech-join, .commit {
+        background: none;
+    }
+
+    .mj-content {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+        .mj-content > div {
+            width: 70%;
+            text-align: left;
+        }
+
+    .pm-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .pm-content .title-violet, .pm-content .pm-button {
+            width: 100%;
+        }
+
+        .pm-block, .pm-content .bl-violet {
+            width: 32%;
+            margin-bottom: 20px;
+        }
+
+    .bl-hp-icon {
+        height: 35%;
+    }
+
+        .bl-hp-icon img {
+            width: 80px;
+        }
+
+    .st-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .st-block {
+        width: 32.2%;
+    }
+
+    .st-content .title-violet, .st-content .st-footer-desc, .st-content .st-title-grey {
+        width: 100%;
+    }
+
+    .pm-content h2 {
+        margin-bottom: 60px;
+    }
+
+    .program-go h2, .support h2 {
+        margin-bottom: 40px;
+    }
+
+    .commit {
+        margin-top: 58px;
+    }
+
+        .commit .progress-icon, .commit .help-icon {
+            display: none;
+        }
+
+        .commit .violet-bg {
+            position: relative;
+            background: none;
+            padding-bottom: 60px;
+        }
+
+            .commit .violet-bg::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                background: rgb(96,73,205);
+                background: linear-gradient(90deg, rgba(96,73,205,1) 0%, rgba(135,89,230,1) 26%, rgba(157,98,245,1) 51%, rgba(157,98,245,0.6978992280505952) 67%, rgba(157,98,245,0.19929978827468486) 80%, rgba(157,98,245,0) 100%);
+            }
+
+            .commit .violet-bg::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: url('../img/vio-girl-desktop.jpg') no-repeat;
+                background-size: auto 120%;
+                background-position: right top;
+                opacity: 1;
+                z-index: 0;
+            }
+
+    .ct-content.content > div {
+        position: relative;
+        z-index: 2;
+        text-align: left;
+        width: 50%;
+    }
+
+    .button-on input[type=button]:hover, .pc-button input[type=button]:hover {
+        transform: scale(1.07);
+    }
+
+    .be-content, .pg-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .be-content .be-block, .pg-content .pg-desc {
+            width: 32%;
+            align-content: baseline;
+        }
+
+
+        .be-content .title-violet, .pg-content .title-white {
+            width: 100%;
+        }
+
+        .pg-content .pg-desc {
+            width: 24%;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+    .po-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .po-block {
+        width: 24%;
+    }
+
+    .po-content .title-violet {
+        width: 100%;
+    }
+
+    .support .st-title-grey p {
+        font-size: 42px;
+        line-height: 58px;
+        color: #6049C4;
+        margin: 5px auto 30px;
+    }
+
+    .program-online .po-block .po-icon img {
+        width: auto;
+        height: 70px;
+    }
+
+    .st-footer-desc {
+        margin-top: 40px;
+    }
+
+    .bundle h2 {
+        margin-bottom: 60px;
+    }
+
+    .be-block {
+        position: relative;
+        padding-bottom: 130px;
+    }
+
+        .be-block .block-violet {
+            margin-bottom: 30px;
+        }
+
+    .be-button-on {
+        position: absolute;
+        z-index: 10;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+    }
+
+    .gd-content {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 40px 40px 100px
+    }
+
+        .gd-content > div {
+            display: inline-block;
+            width: 55%;
+            text-align: left;
+        }
+
+    .gd-stamp {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -15%;
+        background: url('../img/guarana-desktop.png') no-repeat;
+        background-size: auto 50%;
+        background-position: right center;
+    }
+
+    .guaranteed {
+        margin-top: 80px;
+    }
+
+        .guaranteed .desc-text-white, .new-year .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .guaranteed .desc-text-white .gd-icon {
+                width: 100px;
+                text-align: center;
+            }
+
+        .guaranteed .gd-icon {
+            margin: 0;
+        }
+
+        .guaranteed p {
+            margin: 0;
+            width: 90%;
+            width: calc(100% - 120px);
+        }
+
+    .hideMob {
+        display: inherit;
+    }
+
+    .showMob {
+        display: none;
+    }
+
+    .ny-content, .gd-footer-img {
+        text-align: left;
+        height: initial;
+    }
+
+
+
+    .new-year {
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+    }
+
+        .new-year h2 {
+            width: 100%;
+        }
+
+    .ny-content {
+        width: 55%;
+    }
+
+    .gd-footer-img {
+        width: 40%;
+    }
+
+        .gd-footer-img img {
+            position: initial;
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+    .button-on.ny-button input[type="button"], .pc-button input[type="button"] {
+        font-size: 28px;
+        padding: 16px 20px 10px;
+        line-height: 31px;
+        letter-spacing: -0.025em;
+    }
+
+    .ny-button {
+        margin-top: 40px;
+    }
+
+    .program-go {
+        padding-bottom: 80px;
+    }
+
+    .ttl-wide-desktop {width: 120%;}
+}
+
+@media screen and (min-width: 1010px) {
+    .cr-desc.desc-text p:last-child {
+        font-size: 42px;
+        line-height: 58px;
+    }
+
+    header h1 {
+        font-size: 57px;
+        line-height: 70px;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .be-block h4 {
+        font-size: 29px;
+        line-height: 38px;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .canvas-block {
+        width: min-content;
+        margin-right: 52px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    header h1 {
+        padding: 30px 0 25px;
+    }
+
+    .gd-content > div {
+        width: 60%;
+    }
+
+    .gd-stamp {
+        left: -23%;
+        background-size: auto 70%;
+    }
+
+    .ny-content {
+        width: 40%;
+    }
+
+    .gd-footer-img {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .content {
+        width: 100%;
+        max-width: 1280px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .gd-content > div {
+        width: 60%;
+    }
+
+    .gd-stamp {
+        left: -22%;
+        background-size: auto 80%;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+
+    .gd-content > div {
+        width: 60%;
+    }
+
+    .gd-stamp {
+        left: -25%;
+        background-size: auto 80%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .commit .violet-bg::before {
+        content: "";
+        background: rgb(96,73,205);
+        background: linear-gradient(90deg, rgba(96,73,205,1) 0%, rgba(135,89,230,1) 25%, rgba(157,98,245,1) 55%, rgba(157,98,245,0.6978992280505952) 72%, rgba(157,98,245,0.19929978827468486) 85%, rgba(157,98,245,0) 100%);
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .mindtech-join .violet-bg {
+        background: url('../img/vio-rocks-desktop.jpg') no-repeat;
+        background-size: 102% auto;
+        background-position: center center;
+    }
+}

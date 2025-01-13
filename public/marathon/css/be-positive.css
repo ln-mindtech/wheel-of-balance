@@ -1,0 +1,330 @@
+p.txt-sm, .positive-mind .diagram ul.txt-sm li {
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.diagram .right, .diagram .left {
+    width: 100%;
+}
+
+.diagram .right {
+    padding: 50px 0;
+}
+
+.positive-mind .hi.scores h3, .positive-mind .med.scores h3, .positive-mind .low.scores h3 {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 15px 8px;
+}
+
+.positive-mind .med.scores .bl-right {
+    padding-top: 18px;
+    padding-bottom: 0;
+}
+
+.positive-mind .low.scores .bl-right {
+    padding-top: 18px;
+    padding-bottom: 0;
+}
+
+.positive-mind .scores .bl-left p {
+    width: 50px;
+    font-size: 18px;
+}
+
+.positive-mind .diagram ul {
+    margin: -10px 0 15px 40px;
+}
+
+    .positive-mind .diagram ul.last {
+        margin-bottom: 22px;
+    }
+
+    .positive-mind .diagram ul li {
+        margin-bottom: 0;
+    }
+
+.mart-minus-15 {
+    margin-top: -28px;
+}
+
+ul.modern-list {
+    position: relative;
+}
+
+    ul.modern-list li {
+        border-top: none;
+        font-weight: 400;
+    }
+
+        ul.modern-list li:last-child {
+            border-bottom: none;
+        }
+
+        ul.modern-list li::before, ul.modern-list::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 10%;
+            width: 90%;
+            height: 1px;
+            background: rgb(95,97,110);
+            background: linear-gradient(90deg, rgba(95,97,110,0) 0%, rgba(95,97,110,0.5) 30%, rgba(95,97,110,1) 50%, rgba(95,97,110,0.5) 70%, rgba(95,97,110,0) 100%);
+        }
+
+    ul.modern-list::before {
+        top: initial;
+        bottom: 0;
+    }
+
+#be-res-ul li[data-num="2"] {
+    margin-top: -30px;
+}
+
+    #be-res-ul li[data-num="2"]::before {
+        background: none;
+    }
+
+
+h2.thin {
+    font-weight: 200;
+}
+
+    h2.thin b, .st-block p b {
+        font-weight: 700;
+    }
+
+.positive-mind .tk-footer-desc {
+    margin-top: 50px;
+}
+
+.tk-footer-desc > p {
+    margin-bottom: 8px;
+}
+
+.positive-mind .diagram ul li::after {
+    top: 8px;
+}
+
+.positive-mind .block-violet-top {
+    background: rgb(101,101,101);
+    background: linear-gradient(90deg, rgba(101,101,101,0.75) 0%, rgba(69,69,69,0.75) 100%);
+}
+
+
+#b-neg-scoll > img, .b-negative-img + ul.feat-list li::after {
+    opacity: 0.85;
+}
+
+.positive-mind .block-violet p b {
+    font-weight: 800;
+}
+
+.positive-mind .block-violet.down {
+    border-radius: 0;
+}
+
+.positive-mind .block-violet-center.down p {
+    color: #444444;
+}
+
+.positive-mind .orange .white-cells.last p {
+    text-shadow: none;
+    color: #444444 !important;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 320px) {
+    .positive-mind #balance-wheel {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .positive-mind #balance-wheel {
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .positive-mind #balance-wheel {
+        width: 380px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .positive-mind .diagram ul li::after {
+        top: 9px;
+    }
+
+    .positive-mind .diagram ul {
+        margin: -10px 0 15px 70px;
+    }
+
+    .positive-mind .bundle .be-block {
+        padding-top: 114px;
+    }
+
+        .positive-mind .bundle .be-block .feat-list li {
+            font-size: 23px;
+            line-height: 28px;
+        }
+
+            .positive-mind .bundle .be-block .feat-list li::after, .positive-mind .bundle .b-positive-img + ul.feat-list li span::after {
+                top: -2px;
+            }
+
+    .positive-mind .bundle .block-violet {
+        border-radius: 0;
+    }
+
+        .positive-mind .bundle .block-violet.first {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+    .positive-mind .bundle .block-violet-top.first {
+        border-top-left-radius: 13px;
+    }
+
+    .positive-mind .bundle .block-violet-center.first {
+        border-top-right-radius: 13px;
+    }
+
+    .positive-mind .bundle .block-violet-top.down {
+        border-bottom-left-radius: 13px;
+    }
+
+    .positive-mind .bundle .block-violet-center.down {
+        border-bottom-right-radius: 13px;
+    }
+
+    .positive-mind .diagram .right .content {
+        padding-left: 20px;
+    }
+
+    .dg-content, .positive-mind .program-go > .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .positive-mind .program-go .left {
+        width: 60%;
+        text-align: left;
+    }
+
+        .positive-mind .program-go .left .manipulate {
+            margin-top: 0;
+        }
+
+    .positive-mind .program-go .right {
+        width: 35%;
+    }
+
+        .positive-mind .program-go .right > div {
+            margin: 0;
+            padding: 0;
+        }
+
+    .diagram .right, .diagram .left {
+        width: 50%;
+    }
+
+    .positive-mind .program-go .vio-block, .positive-mind .program-go .vio-block p.last {
+        margin-bottom: 0;
+    }
+
+    .positive-mind #balance-wheel {
+        width: 440px;
+    }
+
+    p.txt-sm, .positive-mind .diagram ul.txt-sm li, .quotes p {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    ul.modern-list li {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .b-negative-img, .b-positive-img {
+        margin-top: 38%;
+    }
+
+    .positive-mind .bundle {
+        margin-bottom: 90px;
+    }
+
+    ul.modern-list li::before, ul.modern-list::before {
+        content: "";  
+        left: 0%;
+        width: 100%;
+        height: 1px;   
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .positive-mind #balance-wheel {
+        width: 460px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .positive-mind #balance-wheel {
+        width: 470px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .b-negative-img, .b-positive-img {
+        margin-top: 23%;
+    }
+
+    .positive-mind #balance-wheel {
+        width: 500px;
+    }
+
+    .positive-mind .content {
+        max-width: 1080px;
+    }
+
+    .diagram .left {
+        width: 42%;
+    }
+
+    .diagram .right {
+        width: 58%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .positive-mind #balance-wheel {
+        width: 500px;
+    }
+
+    .positive-mind .content {
+        max-width: 1080px;
+    }
+
+    .diagram .left {
+        width: 37%;
+    }
+
+    .diagram .right {
+        width: 63%;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    p.txt-sm, .positive-mind .diagram ul.txt-sm li {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+}
