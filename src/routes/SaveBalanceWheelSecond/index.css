@@ -76,3 +76,9 @@
     width: 30px;
     margin-top: 0;
 }
+
+.buttons-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

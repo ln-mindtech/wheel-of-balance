@@ -142,6 +142,10 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
             });
     };
 
+    const skipFeedbackBalanceWheelRequest = () => {
+        history("/startReflections/" + sessionStorage.getItem('hash_participant'));
+    }
+
     return (
         <div className={'balance-wheel-save-div'}>
             <div className='balance-wheel-save-head'>
@@ -182,11 +186,14 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
                 />
             )}
             {!isEmailValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
+            <div className='buttons-block'>
             <SaveButton
                 text={'Get Your Personal Wheel of Balance Breakdown'}
                 onclick={saveBalanceWheelRequest}
                 disabled={isButtonDisabled}
             />
+            <button className={'save-button'} onClick={skipFeedbackBalanceWheelRequest}><strong>Get More Information</strong></button>
+            </div>
         </div>
     );
 }
