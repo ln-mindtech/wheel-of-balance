@@ -51,7 +51,7 @@ function App() {
                     {/*<Route path="/welcome" element={<Welcome />} />*/}
                     {/*<Route path="/welcome/new" element={<WelcomeSecond />} />*/}
                     {/*<Route path="/welcome/wheel" element={<LegacyWelcome />} />*/}
-                    <Route path="/" element={<BalanceWheel setData={setData}/>} />
+                    <Route path="/" element={<BalanceWheelSecond setData={setData}/>} />
                     <Route path="/welcome" element={<BalanceWheel setData={setData}/>} />
                     <Route path="/welcome/new" element={<BalanceWheelSecond setData={setData}/>} />
                     <Route path="/welcome/wheel" element={<LegacyBalanceWheel setData={setData}/>} />

@@ -52,19 +52,35 @@ export const BalanceWheel = ({setData}) => {
                     console.error('Error fetching data:', error);
                 });
         } else {
+            // if (sessionStorage.getItem('reflections')) {
+            //     console.log("here", JSON.parse(sessionStorage.getItem('reflections')));
+            //     setResponseData(JSON.parse(sessionStorage.getItem('reflections')));
+            // } else {
+            //     APIService.getBalanceWheelQuestions()
+            //     .then(response => {
+            //         setResponseData(response.data);
+            //         sessionStorage.setItem('reflections', JSON.stringify(response.data));
+            //     })
+            //     .catch(error => {
+            //         console.error('Error fetching data:', error);
+            //         history("*");
+            //     });
+            // }
             APIService.getBalanceWheelQuestions()
-                .then(response => {
-                    setResponseData(response.data);
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                    history("*");
-                });
+            .then(response => {
+                setResponseData(response.data);
+                sessionStorage.setItem('reflections', JSON.stringify(response.data));
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                history("*");
+            });
         }
     }, []);
 
     useEffect(() => {
         if (responseData) {
+            console.log("RRRR", responseData)
             renderWheel(responseData, maxMarkValue);
             if (!responseData?.questions[questionIndex].mark) {
                 setIsButtonDisabled(true);
@@ -105,6 +121,7 @@ export const BalanceWheel = ({setData}) => {
             setIsButtonDisabled(false);
         }
         handleQuestionIndex(questionIndex + 1);
+        history(`/reflection/${questionIndex + 1}`);
     };
 
     const handleQuestionIndex = (newQuestionIndex) => {

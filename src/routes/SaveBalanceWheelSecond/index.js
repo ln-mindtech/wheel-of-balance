@@ -74,6 +74,15 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
         data.name = event.target.value;
         setData(data);
     }
+    const handleMassengerChange = (event) => {
+        data.massenger = event.target.value;
+        setData(data);
+    }
+    const handleFacebookChange = (event) => {
+        data.facebook = event.target.value;
+        setData(data);
+    }
+    
 
     const saveBalanceWheelRequest = () => {
         let quesions = data.questions;
@@ -82,13 +91,15 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
         let analytics = {};
         let currentDate = new Date()
         for (let quesion of quesions) {
-            answers.push({"id_wheel_question":quesion.id, "mark":quesion.mark, "answer":quesion.answer});
+            answers.push({"id_wheel_question":quesion.id, "mark":quesion.mark, "answer":JSON.stringify(quesion.answer)});
         }
 
         let balanceWheelSaveData = {
             'answers': {...answers},
             'email':data.email,
             'name':data.name,
+            'massenger': data.massenger,
+            'facebook_link': data.facebook,
             'id_participant':sessionStorage.getItem('id_participant'),
             'current_date':currentDate,
             'img': canvasImg,
@@ -102,7 +113,7 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
         }
 
         mixpanel.track('Email me press', analytics);
-
+console.log("balanceWheelSaveData", balanceWheelSaveData)
         APIService.saveBalanceWheelQuestions(balanceWheelSaveData)
             .then(response => {
                 if (response.data.hash) {
@@ -133,7 +144,8 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
                 url.searchParams.set('name', data.name);
                 url.searchParams.set('Email', data.email);
                 url.searchParams.set('Version', response.data.version);
-                window.location.href = url;
+                // window.location.href = url;
+                // window.location.href = "/balance/wheel/thanks";
             })
             .catch(error => {
 
@@ -153,22 +165,26 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
                     <div className={'life-sphere-icon-div'}>
                         <img className={'default'} src={defaultIcon}/>
                     </div>
-                    <span>Your Wheel of Life Balance</span>
+                    <span>Your Wheel of Life Balance is Ready</span>
                 </h2>
             </div>
+            <h3>How to Get Your Personalized Breakdown?</h3>
             <div className="graph">
                 <canvas id="balance-wheel" width="360" height="310"></canvas>
             </div>
             <p>
-                This is your Wheel of Life Balance, reflecting the current state of key areas in your life.
+                To receive a personalized breakdown of your Wheel with recomendations:
             </p>
-            <p>
-                To receive a free, detailed interpretation of your Wheel, please enter your email address below:
-            </p>
+            <ul>
+                <li>✅ Leave your preferred contact (email or massenger)</li>
+                <li>✅ We personally analyze your results (This is why it can take 1-24 hours)</li>
+                <li>✅ Get a  deep explanation and actionable insights</li>
+            </ul>
+            <div className='inputs-block'>
             <Input
                 name={'name'}
                 onchange={handleNameChange}
-                placeholder={'[Your first name]'}
+                placeholder={'[Your first name]*'}
             />
             {reevaluate ? (
                 <Input
@@ -176,23 +192,37 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
                     disabled={isEmailDisabled}
                     value={email}
                     onchange={handleEmailChange}
-                    placeholder={'[Your e-mail]'}
+                    placeholder={'[Your e-mail]*'}
                 />
             ) : (
                 <Input
                     name={'email'}
                     onchange={handleEmailChange}
-                    placeholder={'[Your e-mail]'}
+                    placeholder={'[Your e-mail]*'}
                 />
             )}
+                        <Input
+                name={'messenger'}
+                onchange={handleMassengerChange}
+                placeholder={'[Your Whatsapp/Telegram]'}
+            />
+                        <Input
+                name={'facebook'}
+                onchange={handleFacebookChange}
+                placeholder={'[Your Facebook Profile Link]'}
+            />
+            </div>
             {!isEmailValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
             <div className='buttons-block'>
-            <SaveButton
+            {/* <Link to="/balance/wheel/thanks"> */}
+                <SaveButton
                 text={'Get Your Personal Wheel of Balance Breakdown'}
                 onclick={saveBalanceWheelRequest}
                 disabled={isButtonDisabled}
             />
-            <button className={'save-button'} onClick={skipFeedbackBalanceWheelRequest}><strong>Get More Information</strong></button>
+                {/* </Link>      */}
+
+            {/* <button className={'save-button'} onClick={skipFeedbackBalanceWheelRequest}><strong>Get More Information</strong></button> */}
             </div>
         </div>
     );

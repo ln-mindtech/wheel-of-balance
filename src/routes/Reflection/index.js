@@ -152,6 +152,7 @@ const Reflection = () => {
             setPageIndex(1);
         } else {
             setPageIndex(parseInt(pageIndex) + 1);
+            history(`/reflection/${questionIndex + 1}`);
         }
 
         onSaveReflections();
@@ -163,18 +164,18 @@ const Reflection = () => {
     }
 
     const btnNextSphereClick = () => {
-        if (pageIndex >= reflectionsData.length) {
-            setPageIndex(1);
-        } else {
-            setPageIndex(parseInt(pageIndex) + 1);
-        }
-
         onSaveReflections();
 
         setFormData(defaultFormData);
         setNextQuestionIndex(0);
 
         sendAnalytics('Reflection Next Button press');
+        if (pageIndex >= reflectionsData.length) {
+            setPageIndex(1);
+        } else {
+            setPageIndex(parseInt(pageIndex) + 1);
+            history(`/`);
+        }
     }
 
     const pnPrevSphereClick = () => {

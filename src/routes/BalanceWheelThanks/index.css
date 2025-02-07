@@ -3,3 +3,34 @@
     margin-right: 20px;
 }
 
+.balance-wheel-thanks .content ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.balance-wheel-thanks .content p, .balance-wheel-thanks .content li {
+    margin: 5px 10px;
+    color: #5F616E;
+    text-align: left;
+}
+
+.icons {
+    margin: 2rem 0;
+}
+
+.icons ul {
+    display: flex;
+    justify-content: center;
+}
+
+.balance-wheel-thanks .content .icons .join-us {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .balance-wheel-thanks .content {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
