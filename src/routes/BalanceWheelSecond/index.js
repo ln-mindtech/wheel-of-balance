@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import {BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate} from 'react-router-dom';
-import axios from 'axios';
+import {Link, useNavigate} from 'react-router-dom';
 import './index.css';
-import {renderWheel, renderWheelSecond} from "./utils";
+import {renderWheel} from "./utils";
 import APIService from '../../service/APIService';
 import mixpanel from 'mixpanel-browser';
 import {Textarea} from "../../components/Textarea";
