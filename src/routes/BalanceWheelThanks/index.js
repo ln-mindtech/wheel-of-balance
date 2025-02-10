@@ -19,24 +19,25 @@ const BalanceWheelThanks = () => {
             <TopButton backUrl={backUrl}/>
             <div className={'content'}>
                 <h2>
-                    Thank you for your trust!
+                Thank You for Taking our Wheel of Life Balance Assessment! 
                 </h2>
                 <h2>What's next?</h2>
-                <p>Each Life Balance Wheel is analyzed individually, which takes between 1 to 24 hours. We want to make sure you receive personalized insights that truly help you.</p>
-                <p>🚀In the meantime, join our community on your preferred platform!</p>
+                <p>We’ve received your results and contact information.</p>
+                <p>Each application is analyzed manually, so it typically takes up to 24 hours to create your personalized breakdown and recommendations.</p>
+                <h2>As we prepare your insights, take the next step by joining our supportive community! 🚀!</h2>
                 <div className='icons'>
+                <p className='join-us'>Choose your favorite platform and join us today! </p>
                     <ul>
                         <li><a href="https://discord.gg/CTFBuNUs"><img width="75" height="77" src={discordImage} alt="Discord"/></a></li>
                         <li><a href="https://www.facebook.com/share/g/1FM2ZEvMLf/"><img width="75" height="77" src={facebookImage} alt="facebook"></img></a></li>
                         <li><a href="https://chat.whatsapp.com/GcplC0jCKHT4QNsVsmdMwT"><img width="75" height="77" src={whatsappImage}  alt="whatsapp"></img></a></li>
                     </ul>
-                    <p className='join-us'>(сlick on the icon to join us)</p>
                 </div>
-                <p>Here's what you'll get:</p>
             <ul>
-                <li>✅ Exclusive content and resources for personal growth</li>
-                <li>✅ A supportive network of like-minded individuals</li>
-                <li>✅ Real success stories and guidance to help you progress</li>
+                <li>✅ Discover success stories and insights from others</li>
+                <li>✅ Access exclusive content and resources for personal growth</li>
+                <li>✅ Get expert guidance and support to help you progress</li>
+                <li>✅ Connect with like-minded people in a motivating environment</li>
             </ul>
             </div>
         </div>

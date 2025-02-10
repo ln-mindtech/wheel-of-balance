@@ -26,6 +26,7 @@
 
 .balance-wheel-thanks .content .icons .join-us {
     text-align: center;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {

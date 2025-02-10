@@ -19,6 +19,10 @@
     color: #5F616E;
 }
 
+.balance-wheel-save-div p .bold-text {
+    font-weight: bold;
+}
+
 .reevaluate-balance-wheel {
     margin-top: 10px;
 }
@@ -91,10 +95,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-@media screen and (min-width: 1024px) {
-    .balance-wheel-save-div ul {
-        margin-left: 30%;
-    }
 }

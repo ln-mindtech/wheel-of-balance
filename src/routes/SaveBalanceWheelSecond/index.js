@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import './index.css';
-import {Button} from "../../components/Button";
+// import {Button} from "../../components/Button";
+import {Checkbox} from "../../components/Checkbox";
 import {Input} from "../../components/Input";
 import {renderWheel} from "../BalanceWheel/utils";
 import APIService from "../../service/APIService";
@@ -13,7 +14,11 @@ import AppReactPixel from "../../service/AppReactPixel";
 export const SaveBalanceWheelSecond = ({data, setData}) => {
     const [canvasImg, setCanvasImg] = useState();
     const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-    const [isEmailValid, setIsEmailValid] = useState(true);
+    const [isEmailValid, setIsEmailValid] = useState(false);
+    const [emailActive, setEmailActive] = useState(false);
+    const [whatsappActive, setWhatsappActive] = useState(false);
+    const [discordActive, setDiscordActive] = useState(false);
+    const [facebookActive, setFacebookActive] = useState(false);
     const [isEmailDisabled, setEmailDisabled] = useState(false);
     const reevaluate = sessionStorage.getItem('reevaluate');
     let history = useNavigate();
@@ -21,6 +26,9 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
     let isRenderWheel = true;
     const maxMarkValue = 10;
     const version = sessionStorage.getItem('version') ?? 1;
+    const isValid = (value) => {
+        return (typeof value !== 'undefined' && value);
+      }
 
     if (!data) {
         data = [];
@@ -54,39 +62,55 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
         }
     })
 
+    useEffect(() => {
+        if (isValid(data.name) && ((emailActive && isEmailValid) || (whatsappActive && isValid(data.whatsapp)) || (discordActive && isValid(data.discord)) || (facebookActive && isValid(data.facebook_link)))) {
+            setIsButtonDisabled(false);
+        } else {
+            setIsButtonDisabled(true);
+        }
+    }, [isEmailValid, data, emailActive, whatsappActive, discordActive, facebookActive]);
+
     const renderBalanceWheel = (data, maxMarkValue) => {
         const wheel = renderWheel(data, maxMarkValue);
         setCanvasImg(wheel);
     }
 
     const handleEmailChange = (event) => {
-        data.email = event.target.value;
+        const newData = {...data};
+        newData.email = event.target.value;
         sessionStorage.setItem('email', event.target.value);
-        setData(data);
+        setData(newData);
 
         // Check if the entered email is valid
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         setIsEmailValid(emailPattern.test(event.target.value));
-        setIsButtonDisabled(!emailPattern.test(event.target.value));
+        // emailActive && setIsButtonDisabled(!emailPattern.test(event.target.value));
     };
 
     const handleNameChange = (event) => {
-        data.name = event.target.value;
-        setData(data);
+        const newData = {...data};
+        newData.name = event.target.value;
+        setData(newData);
     }
-    const handleMassengerChange = (event) => {
-        data.massenger = event.target.value;
-        setData(data);
+    const handleWhatsappChange = (event) => {
+        const newData = {...data};
+        newData["whatsapp"] = event.target.value;
+        setData(newData);
+    }
+    const handleDiscordChange = (event) => {
+        const newData = {...data};
+        newData.discord = event.target.value;
+        setData(newData);
     }
     const handleFacebookChange = (event) => {
-        data.facebook = event.target.value;
-        setData(data);
+        const newData = {...data};
+        newData.facebook_link = event.target.value;
+        setData(newData);
     }
-    
+
 
     const saveBalanceWheelRequest = () => {
         let quesions = data.questions;
-
         let answers = [];
         let analytics = {};
         let currentDate = new Date()
@@ -98,8 +122,9 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
             'answers': {...answers},
             'email':data.email,
             'name':data.name,
-            'massenger': data.massenger,
-            'facebook_link': data.facebook,
+            'whatsapp': data.whatsapp,
+            'discord': data.discord,
+            'facebook_link': data.facebook_link,
             'id_participant':sessionStorage.getItem('id_participant'),
             'current_date':currentDate,
             'img': canvasImg,
@@ -113,7 +138,6 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
         }
 
         mixpanel.track('Email me press', analytics);
-console.log("balanceWheelSaveData", balanceWheelSaveData)
         APIService.saveBalanceWheelQuestions(balanceWheelSaveData)
             .then(response => {
                 if (response.data.hash) {
@@ -154,9 +178,9 @@ console.log("balanceWheelSaveData", balanceWheelSaveData)
             });
     };
 
-    const skipFeedbackBalanceWheelRequest = () => {
-        history("/startReflections/" + sessionStorage.getItem('hash_participant'));
-    }
+    // const skipFeedbackBalanceWheelRequest = () => {
+    //     history("/startReflections/" + sessionStorage.getItem('hash_participant'));
+    // }
 
     return (
         <div className={'balance-wheel-save-div'}>
@@ -173,54 +197,79 @@ console.log("balanceWheelSaveData", balanceWheelSaveData)
                 <canvas id="balance-wheel" width="360" height="310"></canvas>
             </div>
             <p>
-                To receive a personalized breakdown of your Wheel with recomendations:
+                <span className='bold-text'>To receive your personalized results,</span><br/> please select your preferred contact method:
             </p>
             <ul>
-                <li>✅ Leave your preferred contact (email or massenger)</li>
-                <li>✅ We personally analyze your results (This is why it can take 1-24 hours)</li>
-                <li>✅ Get a  deep explanation and actionable insights</li>
+                <li>            
+                    <Checkbox
+                                name={'active_email'}
+                                text={'I prefer email'}
+                                onchange={()=>setEmailActive(!emailActive)}
+                            />
+                            </li>
+                <li>    <Checkbox
+                                name={'active_whatsApp'}
+                                text={'I prefer WhatsApp'}
+                                onchange={()=>setWhatsappActive(!whatsappActive)}
+                            /></li>
+                <li>    <Checkbox
+                                name={'active_discord'}
+                                text={'I prefer Discord'}
+                                onchange={()=>setDiscordActive(!discordActive)}
+                            /></li>
+                                            <li>    <Checkbox
+                                name={'active_facebook'}
+                                text={'I prefer Facebook'}
+                                onchange={()=>setFacebookActive(!facebookActive)}
+                            /></li>
             </ul>
             <div className='inputs-block'>
             <Input
                 name={'name'}
                 onchange={handleNameChange}
-                placeholder={'[Your first name]*'}
+                placeholder={'[Your Full Name]*'}
             />
-            {reevaluate ? (
+            {emailActive && (reevaluate ? (
                 <Input
                     name={'email'}
                     disabled={isEmailDisabled}
                     value={email}
                     onchange={handleEmailChange}
-                    placeholder={'[Your e-mail]*'}
+                    placeholder={'[Your e-mail]'}
                 />
             ) : (
                 <Input
                     name={'email'}
                     onchange={handleEmailChange}
-                    placeholder={'[Your e-mail]*'}
+                    placeholder={'[Your e-mail]'}
                 />
-            )}
-                        <Input
-                name={'messenger'}
-                onchange={handleMassengerChange}
-                placeholder={'[Your Whatsapp/Telegram]'}
-            />
-                        <Input
-                name={'facebook'}
+            ))}
+{whatsappActive && (<Input
+                name={'whatsapp'}
+                onchange={handleWhatsappChange}
+                placeholder={'[Your Whatsapp]'}
+            />)}
+            {discordActive && (                        <Input
+                name={'discord'}
+                onchange={handleDiscordChange}
+                placeholder={'[Your Discord]'}
+            />)}
+            {facebookActive && (                        <Input
+                name={'facebook_link'}
                 onchange={handleFacebookChange}
                 placeholder={'[Your Facebook Profile Link]'}
-            />
+            />)}
             </div>
-            {!isEmailValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
+            {emailActive && !isEmailValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
+            <p>👉 We will manually analyze your results and send them to you within 24 hours,<br/> along with a detailed breakdown, an in-depth explanation, and actionable insights! 👈</p>
             <div className='buttons-block'>
-            {/* <Link to="/balance/wheel/thanks"> */}
+            <Link to="/balance/wheel/thanks">
                 <SaveButton
                 text={'Get Your Personal Wheel of Balance Breakdown'}
                 onclick={saveBalanceWheelRequest}
                 disabled={isButtonDisabled}
             />
-                {/* </Link>      */}
+                </Link>     
 
             {/* <button className={'save-button'} onClick={skipFeedbackBalanceWheelRequest}><strong>Get More Information</strong></button> */}
             </div>

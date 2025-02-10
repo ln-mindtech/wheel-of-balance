@@ -58,7 +58,6 @@ export const BalanceWheelSecond = ({setData}) => {
     }, []);
 
     useEffect(() => {
-        console.log("questionIndex", questionIndex);
         if (responseData && !checkedWheel) {
             renderWheel(responseData, maxMarkValue);
             if (!responseData?.questions[questionIndex].mark) {
@@ -132,8 +131,6 @@ export const BalanceWheelSecond = ({setData}) => {
         const newAnswers = [...answers];
     newAnswers[itemNumber] = event.target.value;
     setAnswers(newAnswers);
-    console.log("responseData.questions", responseData.questions)
-    console.log("responseData.questions", newAnswers)
     setData(responseData);
     }
 
@@ -304,7 +301,7 @@ export const BalanceWheelSecond = ({setData}) => {
                         )}
                         {isLastItem(questionIndex) ? (
                             <div>
-                                {responseData.questions[questionIndex].mark ? (
+                                {responseData.questions[questionIndex].mark && checkedWheel? (
                                     <Link to="/save/balance/wheel/new">
                                         <NextButton text={'Next'} onclick={() => onUpdateBalanceWheel()}/>
                                     </Link>
