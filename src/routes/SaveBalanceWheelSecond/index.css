@@ -18,7 +18,9 @@
     margin: 5px 10px;
     color: #5F616E;
 }
-
+.balance-wheel-save-div p.text-with-margin {
+    margin: 10px;
+}
 .balance-wheel-save-div p .bold-text {
     font-weight: bold;
 }

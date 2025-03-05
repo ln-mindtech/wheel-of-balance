@@ -235,9 +235,10 @@ export const BalanceWheelSecond = ({setData}) => {
                             <span>{responseData.questions[questionIndex].name}</span>
                         </h1>
                     </div>
-                    <p className='description'>{responseData.questions[questionIndex].description}</p>
+                    
                     {!checkedWheel? (                    
                         <>
+                        <p className='description'>{responseData.questions[questionIndex].description}</p>
                         <h3><strong>{responseData.questions[questionIndex].question}</strong></h3>
                     <div className={'rates'}>
                         {renderRateItems()}
@@ -249,7 +250,7 @@ export const BalanceWheelSecond = ({setData}) => {
                     ) : (                    
                     <div>                  
                         <div className={"question"}>
-                            <p><strong>What factors negatively impacted your rating in this area?</strong></p>
+                            <p><strong>What makes you feel this way?</strong></p>
                         </div>
                         <div className={"answer"}>
                             <Textarea
@@ -260,7 +261,7 @@ export const BalanceWheelSecond = ({setData}) => {
                                 placeholder={'Please type here....'}
                                 rows={2}/>
                         </div>
-                        <div className={"question"}>
+                        {/* <div className={"question"}>
                             <p><strong>What factors positively influenced your rating in this area?</strong></p>
                         </div>
                         <div className={"answer"}>
@@ -283,7 +284,7 @@ export const BalanceWheelSecond = ({setData}) => {
                                 name={`${responseData.questions[questionIndex].name}-2`}
                                 placeholder={'Please type here....'}
                                 rows={2}/>
-                        </div>
+                        </div> */}
                         </div>
                         )
                                     }

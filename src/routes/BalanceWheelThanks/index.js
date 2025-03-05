@@ -19,12 +19,13 @@ const BalanceWheelThanks = () => {
             <TopButton backUrl={backUrl}/>
             <div className={'content'}>
                 <h2>
-                Thank You for Taking our Wheel of Life Balance Assessment! 
+                Thank You for Taking our Wheel of Life Balance Assessment!
                 </h2>
                 <h2>What's next?</h2>
                 <p>We’ve received your results and contact information.</p>
-                <p>Each application is analyzed manually, so it typically takes up to 24 hours to create your personalized breakdown and recommendations.</p>
-                <h2>As we prepare your insights, take the next step by joining our supportive community! 🚀!</h2>
+                <p>Each application is processed manually, so it usually takes up to one working day to get started.<br/> Keep an eye on the messenger you chose—we’ll be in touch soon.</p>
+                <p>Get ready for the journey! 🚀</p>
+                <h2>Meanwhile, take the next step by joining our supportive community! 🤝</h2>
                 <div className='icons'>
                 <p className='join-us'>Choose your favorite platform and join us today! </p>
                     <ul>

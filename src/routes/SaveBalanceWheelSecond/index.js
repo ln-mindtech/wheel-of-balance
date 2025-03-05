@@ -192,21 +192,24 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
                     <span>Your Wheel of Life Balance is Ready</span>
                 </h2>
             </div>
-            <h3>How to Get Your Personalized Breakdown?</h3>
+            {/* <h3>How to Get Your Personalized Breakdown?</h3> */}
             <div className="graph">
                 <canvas id="balance-wheel" width="360" height="310"></canvas>
             </div>
             <p>
-                <span className='bold-text'>To receive your personalized results,</span><br/> please select your preferred contact method:
+            Thank you for your answers! They’ll be fundamental to our online coaching process.<br/> Based on your responses and results, we’ll guide you toward achieving your goals.
             </p>
+            <p className='text-with-margin'>(Don’t worry—if you’d like to refine or update anything, just let us know anytime!)</p>
+            <h3>How to start 1-1 coaching? </h3>
+            <p>Simply choose a messenger:</p>
             <ul>
-                <li>            
+                {/* <li>            
                     <Checkbox
                                 name={'active_email'}
                                 text={'I prefer email'}
                                 onchange={()=>setEmailActive(!emailActive)}
                             />
-                            </li>
+                            </li> */}
                 <li>    <Checkbox
                                 name={'active_whatsApp'}
                                 text={'I prefer WhatsApp'}
@@ -261,11 +264,11 @@ export const SaveBalanceWheelSecond = ({data, setData}) => {
             />)}
             </div>
             {emailActive && !isEmailValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
-            <p>👉 We will manually analyze your results and send them to you within 24 hours,<br/> along with a detailed breakdown, an in-depth explanation, and actionable insights! 👈</p>
+            <p>👉We’ll reach out within one working day and get started! 👈</p>
             <div className='buttons-block'>
             <Link to="/balance/wheel/thanks">
                 <SaveButton
-                text={'Get Your Personal Wheel of Balance Breakdown'}
+                text={'Let’s Get Started!'}
                 onclick={saveBalanceWheelRequest}
                 disabled={isButtonDisabled}
             />

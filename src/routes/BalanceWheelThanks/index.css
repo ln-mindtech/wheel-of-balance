@@ -3,13 +3,19 @@
     margin-right: 20px;
 }
 
+.balance-wheel-thanks .content p {
+    margin: 5px 10px;
+    color: #5F616E;
+    text-align: center;
+}
+
 .balance-wheel-thanks .content ul {
     padding-left: 0;
     list-style: none;
     text-align: left;
 }
 
-.balance-wheel-thanks .content p, .balance-wheel-thanks .content li {
+.balance-wheel-thanks .content li {
     margin: 5px 10px;
     color: #5F616E;
     text-align: left;
